@@ -1,0 +1,94 @@
+Rendszerteszt - normál
+
+Rövid leírás:
+Leadunk egy normál rendelést, kiszállítják
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+rendszer tud rendelést fogadni
+termék kiszállítása lehetséges
+tudunk fizetni
+
+Lépések:
+
+1. Felhasználó lead egy rendelést
+2. Rendszer megállapítja, hogy a fizetés megtörtént
+3. Rendszer megállapítja, hogy "normál" rendelésről van szó
+4. Rendszer jóváhagyja a rendelést
+5. Rendelés kiszállítása megkezdődik
+
+Elvárt eredmény:
+termék kiszállításra került
+
+
+
+
+
+
+
+Rendszerteszt - különleges
+
+Rövid leírás:
+Leadunk egy különleges rendelést, kiszállítják
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+rendszer tud rendelést fogadni
+termék kiszállítása lehetséges
+tudunk fizetni
+
+Lépések:
+
+1. Felhasználó lead egy rendelést
+2. Rendszer megállapítja, hogy a fizetés megtörtént
+3. Rendszer megállapítja, hogy nem "normál" rendelésről van szó
+4. Rendszer megállapítja, hogy "különleges" rendelésről van szó
+5. Rendszer jóváhagyja a rendelést
+6. Rendelés kiszállítása megkezdődik
+
+Elvárt eredmény:
+termék kiszállításra került
+
+
+
+
+
+
+
+
+
+Rendszerteszt - egyéb
+
+Rövid leírás:
+Leadunk egy rendelést hibás rendeléstípussal
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+rendszer tud rendelést fogadni
+termék kiszállítása lehetséges
+tudunk fizetni
+
+Lépések:
+
+1. Felhasználó lead egy rendelést
+2. Rendszer megállapítja, hogy a fizetés megtörtént
+3. Rendszer megállapítja, hogy nem "normál" rendelésről van szó
+3. Rendszer megállapítja, hogy nem "különleges" rendelésről van szó
+4. Rendszer leáll
+
+Elvárt eredmény:
+Rendszer leállt, kiszállítás nem történt meg
+
+
+
+
+
+Egyéb tesztlehetőségek:
+Invalid rendelés
+Nem fizetünk
+Termék nincs raktáron (nem szállítható)
+Rendelés törlése/módosítása a folyamat vége előtt
+REndelés típusa egyszerre "normál" és "különleges

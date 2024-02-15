@@ -1,0 +1,174 @@
+1. Kurzus meghirdetése - felhasználási eset
+
+Rövid leírás:
+Hallgató fel tud venni kurzust a felvehető kurzusok listából
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-Oktató be van jelenetkezve
+-Kurzus ugyanolyan névvel még nincs meghirdetve
+-Kurzus ugyanazon oktató által ugyanarra az időpontra még nem lett meghirdetve
+-rendszer online elérhető
+
+Lépések:
+1. Oktató kiválasztja a kurzusok menüpontot
+2. Rendszer megjeleníti a kurzusok menüt
+3. Oktató kiválasztja a kurzus meghirdetése menüpontot
+4. Rendszer megjeleníti az új kurzus meghirdetése panelt
+5. Oktató kitölti a kurzus nevét
+6. Oktató hozzáad minden időpontot a legördülő menüből az új időpont hozzáadása segítségével
+7. Oktató kiválasztja checkboxok segítségével az előkövetelményeket
+8. Oktató az “ok” gombra kattint
+9. Rendszer ellenőrzi, hogy van e már meghirdetett kurzus a megadott névvel
+10. Rendszer ellenőrzi, hogy van e már meghirdetett kurzusa az oktatónak a megadott időpontokra
+11. Rendszer hozzáadja az adatbázisban az oktatóhoz a kurzust
+12. Rendszer megjelenít egy üzenetet, hogy a kurzus meghirdetése sikeres volt
+
+Elvárt eredmény:
+Kurzus szerepel a meghirdetett kurzusok listájában
+
+
+
+
+
+
+
+
+
+
+2. Feladat hozzáadása - felhasználási eset
+
+Rövid leírás:
+Oktató hozzá tud adni feladatot a saját kurzusaihoz
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-Oktató be van jelenetkezve
+-Kurzus meg van hirdetve, amihez fel akarjuk venni a feladatot
+-Kurzushoz ugyanolyan névvel még nincs hozzáadva feladat
+-rendszer online elérhető
+
+Lépések:
+1. Oktató kiválasztja a kurzusok menüpontot
+2. Rendszer megjeleníti a kurzusok menüt
+3. Oktató kiválasztja a feladat hozzáadása menüpontot
+4. Rendszer megjeleníti a oktató meghirdetett kurzusainak listáját
+5. Oktató kiválasztja a kurzust
+6. Rendszer megjeleníti a feladat hozzáadása panelt
+7. Oktató kitölti a feladat nevét
+8. Oktató az ok-ra kattint
+9. Rendszer hozzáadja az adatbázisban a kurzushoz a feladatot
+10. Rendszer megjeleníti a “feladat hozzáadva” üzenetet
+
+Elvárt eredmény:
+Feladat szerepel a kurzushoz csatolt feladatok listájában
+
+
+
+
+
+
+3. Kurzusfelvétel - felhasználási eset
+
+Rövid leírás:
+Hallgató fel tud venni kurzust a felvehető kurzusok listából
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-hallgató be van jelentkezve
+-Kurzus szerepel a meghirdetett kurzusok listájában
+-Hallgató teljesíti a kurzushoz csatolt követelményeket 
+-a "minden kurzus megjelenítése" opció ki van kapcsolva
+-rendszer online elérhető
+
+Lépések:
+1. Hallgató kiválasztja a kurzusok menüt
+2. Rendszer megjeleníti a kurzusok menüt
+3. Hallgató kiválasztja a kurzus felvétele menüpontot
+4. Rendszer megjeleníti a hallgató által felvehető kurzusokat
+5. Hallgató kiválasztja a kurzust
+6. Rendszer hozzáadja a hallgatót a kurzus hallgatóinak listájához
+7. Rendszer megjeleníti az "kurzus felvéve" üzenetet
+
+Elvárt eredmény:
+Hallgató szerepel a kurzust felvett hallgatók listájában
+
+
+
+
+
+4. Feladat értékelése - felhasználási eset
+
+Rövid leírás:
+Oktató értékelni tudja a meghirdetett kurzusainak feladatait adott hallgatóra
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-Oktató be van jelentkezve
+-Kurzus meg van hirdetve
+-Kurzushoz hozzá van csatolva a feladat
+-Hallgató szerepel a kurzust felvett hallgatók listájában
+-rendszer online elérhető
+
+Lépések:
+
+1. Oktató kiválasztja a kurzusok menüpontot
+2. Rendszer megjeleníti a kurzusok menüt
+3. Oktató kiválasztja a feladat értékelése menüpontot
+4. Rendszer megjeleníti a oktató meghirdetett kurzusainak listáját
+5. Oktató kiválasztja a kurzust
+6. Rendszer megjeleníti a feladat értékelése panelt
+7. Oktató kiválasztja a hallgatót a listából
+8. Oktató kitölti az értékelés mezőt
+9. Oktató az okéra kattint
+10. Rendszer hozzáadja az adatbázisban a feladathoz a hallgatónál az értékelést
+11. Rendszer megjeleníti a “értékelés hozzáadva üzenetet”netet
+
+Elvárt eredmény:
+Kurzushoz csatolt feladat értékelve van a hallgató számára
+
+
+
+
+
+
+
+5. Kurzus értékelése - felhasználási eset
+
+Rövid leírás:
+Oktató értékelni tudja a meghirdetett kurzusait adott hallgatóra
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-Oktató be van jelentkezve
+-Kurzus meg van hirdetve
+-Hallgató szerepel a kurzust felvett hallgatók listájában
+-rendszer online elérhető
+
+Lépések:
+
+1. Oktató kiválasztja a kurzusok menüpontot
+2. Rendszer megjeleníti a kurzusok menüt
+3. Oktató kiválasztja a kurzus értékelése menüpontot
+4. Rendszer megjeleníti a oktató meghirdetett kurzusainak listáját
+5. Oktató kiválasztja a kurzust
+6. Rendszer megjeleníti a kurzus értékelése panelt
+7. Oktató kiválasztja a hallgatót a listából
+8. Oktató kitölti az értékelés mezőt
+9. Oktató az ok-ra kattint
+10. Rendszer hozzáadja az adatbázisban a kurzushoz a hallgatónál az értékelést
+11. Rendszer megjeleníti a “értékelés hozzáadva üzenetet”
+
+Elvárt eredmény:
+Kurzushoz értékelve van a hallgató számára
+
+
+
+
+
+

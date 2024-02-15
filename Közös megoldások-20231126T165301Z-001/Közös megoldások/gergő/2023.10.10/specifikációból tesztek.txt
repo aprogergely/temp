@@ -1,0 +1,110 @@
+3. Regisztráció rendszerteszt - specifikáció
+
+Rövid leírás:
+regisztráció után bejelentkezés
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+
+Lépések:
+1.  Felhasználó rákattint a regisztráció gombra a főoldalon.
+2.  Rendszer megjeleníti a regisztráció oldalt.
+3.  Felhasználó megadja a felhasználónevét és jelszavát.
+4.  Felhasználó a regisztráció gombra kattint
+	5. Rendszer kiküld egy regisztrációs e-mailt
+	6. felhasználó 1 órán belül megerősíti a megadott adatokat az emailben kapott linkkel
+	7.  Rendszer ellenőrzi az adatok helyességét
+8.  Rendszer megjeleníti a bejelentkező oldalt.
+9.  Felhasználó megadja a felhasználónevét és jelszavát.
+10. Felhasználó a bejelentkezés gombra kattint
+11. A rendszer belépteti a felhasználót a user home page-re.
+
+Elvárt eredmény:
+Felhasználó bejelentkezett a user home page-re
+
+Tesztelendő adatok:
+korábban regisztrált e-mail cím
+üres mező
+jelszó 7,8,12,13 karakter
+szóköz
+ékezet
+nem UTF-8
+jelszó nem tartalmaz számot/kisbetűt/nagybetűt
+email nem tartalmaz @-t/pontot
+2 különböző jelszó megadása
+
+
+
+
+
+4. User felhasználó rendszerteszt hibás jelszó 3 - specifikáció
+
+Rövid leírás:
+már regisztrált felhasználó bejelentkeztetése harmadszori próbálkozásra
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+felhasználó regisztrálva van
+felhasználó emlékszik a belépési adataira
+
+Lépések:
+1.  Felhasználó rákattint a bejelentkezés gombra a főoldalon.
+2.  Rendszer megjeleníti a bejelentkező oldalt.
+3.  Felhasználó megadja a felhasználónevét és jelszavát.
+4.  A megadott adatok hibásak.
+5.  Felhasználó kattint (?)
+6.  Rendszer megjeleníti a bejelentkező oldalt.
+7.  Felhasználó megadja a felhasználónevét és jelszavát.
+8.  A megadott adatok hibásak.
+9.  Felhasználó kattint (?)
+10. Rendszer megjeleníti a bejelentkező oldalt.
+11. Felhasználó megadja a felhasználónevét és jelszavát.
+12. A rendszer belépteti a felhasználót a user home page-re. 
+
+
+Elvárt eredmény:
+Felhasználó bejelentkezett a user home page-re
+
+
+
+
+
+
+
+5. User felhasználó rendszerteszt hibás jelszó 4 - specifikáció
+
+Rövid leírás:
+már regisztrált felhasználó blokkolása negyedszeri próbálkozásra
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+felhasználó regisztrálva van
+felhasználó emlékszik a belépési adataira
+
+Lépések:
+1.  Felhasználó rákattint a bejelentkezés gombra a főoldalon.
+2.  Rendszer megjeleníti a bejelentkező oldalt.
+3.  Felhasználó megadja a felhasználónevét és jelszavát.
+4.  A megadott adatok hibásak.
+5.  Felhasználó kattint (?)
+6.  Rendszer megjeleníti a bejelentkező oldalt.
+7.  Felhasználó megadja a felhasználónevét és jelszavát.
+8.  A megadott adatok hibásak.
+9.  Felhasználó kattint (?)
+10. Rendszer megjeleníti a bejelentkező oldalt.
+11. Felhasználó megadja a felhasználónevét és jelszavát.
+12. A megadott adatok hibásak.
+13. Felhasználó kattint (?)
+14. Rendszer megjeleníti a bejelentkező oldalt.
+15. Felhasználó megadja a felhasználónevét és jelszavát.
+16. A megadott adatok helyesek.
+
+
+Elvárt eredmény:
+Felhasználó nem tudott bejelentkezni a user home page-re

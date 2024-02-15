@@ -1,0 +1,136 @@
+1. Új felhasználó felvétele - felhasználási esetek
+
+Rövid leírás:
+Új felhasználó felvétele
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+-online elérhető a szolgáltatás
+-normál felhasználó nincs regisztrálva
+-admin felhasználó regisztrálva van
+
+Lépések:
+1.  Admin bejelentkezik
+2.  Admin kiválasztja az "új felhasználó hozzáadása" menüpontot
+3.  Admin kiválasztja a kívánt típust, csoportot és jogosultságokat.
+4.  Admin a "kész" gombra kattint
+5.  Rendszer létrehoz egy felhasználói fiókot ideiglenes jelszóval
+6.  Felhasználó bejelentkezik
+7.  Felhasználó kiválasztja a "jelszóváltoztatás" menüpontot
+8.  Felhasználó új jelszót ad meg
+9.  Felhasználó az "ok" gombra kattint
+
+Elvárt eredmény:
+Az adatbázisban új felhasználói fiók jött létre, amelynek jelszava egyezik a felhasználó által megadottakkal
+
+
+
+
+
+2. jogosultsági körök módosítása - felhasználási esetek
+
+Rövid leírás:
+meglévő felhasználó jogosultsági körének módosítása
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+-online elérhető a szolgáltatás
+-felhasználó regisztrálva van
+-az anyagok adatbázisa nem üres
+-felhasználóhoz tartozik csoportvezető
+
+Lépések:
+1.  Felhasználó bejelentkezik
+2.  Felhasználó kiválasztja az "jogosultságok kezelése" menüpontot
+3.  Felhasználó kiválasztja azt a felhasználót akinek az adatait módosítani kívánja
+4.  Felhasználó kiválasztja a kívánt jogosultságokat.
+5.  Rendszer regisztrálja a jogosultsági köröket az adatbázisban.
+
+Elvárt eredmény:
+A kiválasztott felhasználó jogosultsági köre megváltozik
+
+
+
+
+
+3. Anyagtípus felvétele rendszerteszt - felhasználási esetek
+
+Rövid leírás:
+új anyagtípus felvétele
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+-online elérhető a szolgáltatás
+-felhasználó regisztrálva van
+-felhasználónak admin jogosultsága van
+
+Lépések:
+1.  Felhasználó bejelentkezik
+2.  Felhasználó kiválasztja az "új típu hozzáadása" menüpontot
+3.  Felhasználó megadja az új anyagtípus nevét.
+4.  Felhasználó beállítja a kívánt tulajdonságokat.
+5.  Felhasználó az "ok" gombra kattint
+
+Elvárt eredmény:
+Rendszer rögzíti az új anyagtípust az adatbázisba
+
+
+
+5. Automatikus rendelés rendszerteszt - felhasználási esetek
+
+Rövid leírás:
+automatikus rendelés beállítása
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+-online elérhető a szolgáltatás
+-felhasználó regisztrálva van
+-az anyagok adatbázisa nem üres
+-felhasználóhoz tartozik csoportvezető
+
+Lépések:
+1.  Felhasználó bejelentkezik
+2.  Felhasználó kiválasztja az "anyagok listája" menüpontot
+3.  Rendszer kilistázza az összes anyagot és opciót
+4.  Felhasználó kiválasztja az "automatikus rendelés" opciót
+5.  Felhasználó kiválaszt egy anyag típust a listából.
+6.  Felhasználó kiválasztja a kívánt mennyiséget, illetve a rendelés periódusát.
+7.  Felhasználó az "ok" gombra kattint
+8.  Rendszer értesíti a felhasználó csoportvezetőjét
+9.  Csoportvezető engedélyezi a rendelést
+10. Rendszer értesítést küld a visszaigazolásról
+11. Rendszer rögzíti a rendelést az adatbázisba
+
+Elvárt eredmény:
+A rendelt anyag a megadott mennyiségben periodikusan kiszállításra kerül... valahova
+
+
+
+
+6. Audit - felhasználási esetek
+
+Rövid leírás:
+anyagok adatainak lekérdezése az adatbázisból
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+-online elérhető a szolgáltatás
+-felhasználó regisztrálva van
+-az anyagok adatbázisa nem üres
+-felhasználónak audit jogosultsága van
+
+Lépések:
+1.  Felhasználó bejelentkezik
+2.  Felhasználó kiválasztja az "lekérdezés" menüpontot
+3.  Rendszer kilistázza a termékeket és az opciókat
+4.  Felhasználó kiválasztja a lekérdezni kívánt termékeket
+5.  Felhasználó az "ok" gombra kattint
+6.  Rendszer kilistázza a kért adatokat a kiválasztott termékekről
+
+Elvárt eredmény:
+A rendszer visszaad egy listát a kiválasztott termékek kért adatairól 

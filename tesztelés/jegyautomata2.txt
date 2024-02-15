@@ -1,0 +1,218 @@
+Rendszerteszt (régi)
+
+Rövid leírás:
+készpénzzel fizetünk, lesz visszajáró
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+Gép működőképes
+van kellő összegű készpénzünk
+
+Lépések:
+1.  Jegyvásárlási folyamat indítása
+2.  Gép utazási információkat kér
+3.  Megadjuk
+4.  Gép fizetési információkat kér
+5.  Készpénzes fizetés választása, túlfizetés
+6.  Gép kiadja a jegyet
+7.  Elvesszük a jegyet
+8.  Gép kiadja a visszajárót
+9.  Elvesszük a visszajárót
+10. Gép megköszöni a vásárlást
+11. Gép visszaáll az eredeti állapotába
+
+Elvárt eredmény:
+kaptunk egy jegyet
+jegy azonos azzal amit kértünk
+visszajáró összege megfelelő
+gép visszaáll az eredeti állapotba
+
+
+
+
+
+1. Funkcionális követelményteszt - út kiválasztása
+
+Rövid leírás:
+Út kiválasztásánál keresési funkció ellenőrzése
+
+Kiindulási állapot:
+Gép utazási információkat kér
+
+Lépések:
+1. Beírunk egy keresési értéket
+2. A gép visszaad egy listát aminek minden eleme tartalmazza a keresési értéket
+3. Kiválasztunk egy keresési értéket a listából
+4. A gép beveszi a kiválasztott értéket
+5. A gép fizetési információkat kér
+
+Tesztelendő keresési értékek:
+-valid úticél
+-indulás legkorábbi időpontja
+-utazási idő
+
+
+Elvárt eredmény:
+A gép egy általunk a keresési eredmény listából kiválasztott úthoz kér fizetési információkat
+
+
+
+
+
+
+
+1.B Funkcionális követelményteszt - út kiválasztása hibás paraméterrel
+
+Rövid leírás:
+Út kiválasztásánál keresési funkció ellenőrzése hibás paraméterek esetén
+
+Kiindulási állapot:
+Gép utazási információkat kér
+
+Lépések:
+1. Beírunk egy keresési értéket
+2. A gép üres listát ad vissza
+3. ???
+4. Gép új keresési értéket kér
+
+Tesztelendő keresési értékek:
+-
+-&nbsp
+-cnorcneiavatrhrtbrtv
+-2123.09.14
+-1023.09.14
+-2023.13.32
+-2023.09.31
+-utazási idő < 1mp
+-utazási idő > 1 év
+
+
+Elvárt eredmény:
+Új keresési értéket tudunk megadni
+
+
+
+
+
+2. Nemfunkcionális követelmény - Angol nyelv
+
+Rövid leírás:
+nyelv megváltoztatása után rendszerteszt
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+Gép működőképes
+van kellő összegű készpénzünk
+gép magyar nyelvre van állítva
+
+Lépések:
+	0.  Angol nyelv választása
+1.  Jegyvásárlási folyamat indítása
+2.  Gép utazási információkat kér
+3.  Megadjuk
+4.  Gép fizetési információkat kér
+5.  Készpénzes fizetés választása, túlfizetés
+6.  Gép kiadja a jegyet
+7.  Elvesszük a jegyet
+8.  Gép kiadja a visszajárót
+9.  Elvesszük a visszajárót
+10. Gép megköszöni a vásárlást
+11. Gép visszaáll az eredeti állapotába
+
+Elvárt eredmény:
+kaptunk egy jegyet
+jegy azonos azzal amit kértünk
+visszajáró összege megfelelő
+gép visszaáll az eredeti állapotba
+gép magyar nyelvre van állítva
+
+
+
+
+
+
+3. Rendszerkövetelmény - Érintőképernyő magassága
+
+Rövid leírás:
+érintőképernyő földtől való távolságának ellenőrzése
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+Gép összeszerelt állapotban a végleges helyén található
+
+Lépések:
+1. Mérőszalaggal megmérjük a gép érintőképernyőjének bal felső sarkának a
+gép fölldel érintkező részétől való távolságát.
+2. Mérőszalaggal megmérjük a gép érintőképernyőjének felső szélének a
+gép fölldel érintkező részétől való távolságát.
+3. Mérőszalaggal megmérjük a gép érintőképernyőjének jobb felső sarkának a
+gép fölldel érintkező részétől való távolságát.
+4. A három eredmény maximumát összevetjük az előírt értékkel.
+
+Elvárt eredmény:
+A kapott mérési érték megfelel az előírásoknak
+
+
+
+
+
+4. Rendszerkövetelmény - Valuták
+
+Rövid leírás:
+euróval fizetünk, lesz visszajáró
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+Gép működőképes
+van kellő összegű készpénzünk
+
+Lépések:
+1.  Jegyvásárlási folyamat indítása
+2.  Gép utazási információkat kér
+3.  Megadjuk
+4.  Gép fizetési információkat kér
+5.  Euró fizetés választása
+6.  Készpénzes fizetés választása, túlfizetés
+7.  Gép kiadja a jegyet
+8.  Elvesszük a jegyet
+	9.  Gép kiadja a visszajárót Euróban
+10. Elvesszük a visszajárót
+11. Gép megköszöni a vásárlást
+12. Gép visszaáll az eredeti állapotába
+
+Elvárt eredmény:
+kaptunk egy jegyet
+jegy azonos azzal amit kértünk
+visszajáró összege megfelelő
+visszajáró pénzneme Euró
+gép visszaáll az eredeti állapotba
+
+
+
+
+4.B Invalid valuta
+
+Rövid leírás:
+japán yennel fizetünk
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+Gép működőképes
+van kellő összegű készpénzünk japán Yenben
+
+Lépések:
+1.  Jegyvásárlási folyamat indítása
+2.  Gép utazási információkat kér
+3.  Megadjuk
+4.  Gép fizetési információkat kér
+5.  Készpénzes fizetés választása
+6.  Japán Yen behelyezése az automatába
+7.  ???
+
+Elvárt eredmény:
+???

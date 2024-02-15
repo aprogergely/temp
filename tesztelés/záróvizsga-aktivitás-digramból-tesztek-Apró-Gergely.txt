@@ -1,0 +1,109 @@
+1. Kurzusfelvétel negatív rendszerteszt - ábra
+
+Rövid leírás:
+Hallgató nem tud felvenni olyan kurzust, aminek előfeltételeit nem teljesíti
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-hallgató be van jelentkezve
+-rendszer online elérhető
+-adatbázisban szerepelnek kurzusok
+-Hallgató nem jogosult a kurzus felvételére
+
+Lépések:
+1.  Hallgató kiválasztja a kurzusok menüt
+2.  Rendszer megjeleníti a kurzusok menüt
+3.  Hallgató kiválasztja a kurzus felvétele menüpontot
+4.  Hallgató kiválasztja a "minden kurzus megjelenítése" opciót
+5.  Rendszer megjeleníti az összes kurzust
+6.  Hallgató kiválasztja a kurzust
+7.  Rendszer megjeleníti az "önnek a kurzus felvételére nincs joga" üzenetet
+
+Elvárt eredmény:
+A hallgató nem vett fel újabb kurzust
+
+
+
+
+2. Kurzusfelvétel pozitív rendszerteszt A - ábra
+
+Rövid leírás:
+Hallgató fel tud venni kurzust az összes kurzus listából
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-hallgató be van jelentkezve
+-rendszer online elérhető
+-adatbázisban szerepelnek kurzusok
+-Hallgató jogosult a kurzus felvételére
+
+Lépések:
+1.  Hallgató kiválasztja a kurzusok menüt
+2.  Rendszer megjeleníti a kurzusok menüt
+3.  Hallgató kiválasztja a kurzus felvétele menüpontot
+4.  Hallgató kiválasztja a "minden kurzus megjelenítése" opciót
+5.  Rendszer megjeleníti az összes kurzust
+6.  Hallgató kiválasztja a kurzust
+7.  Rendszer hozzáadja a hallgatót a kurzus hallgatóinak listájához
+8.  Rendszer megjeleníti a "kurzus felvéve" üzenetet
+
+Elvárt eredmény:
+A hallgató sikeresen felvett egy újabb kurzust
+
+
+
+
+3. Kurzusfelvétel pozitív rendszerteszt B - ábra
+
+Rövid leírás:
+Hallgató fel tud venni kurzust a felvehető kurzusok listából
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-hallgató be van jelentkezve
+-rendszer online elérhető
+-adatbázisban szerepelnek kurzusok
+-Hallgató jogosult a kurzus felvételére
+-"minden kurzus megjelenítése" opció ki van kapcsolva
+
+Lépések:
+1.  Hallgató kiválasztja a kurzusok menüt
+2.  Rendszer megjeleníti a kurzusok menüt
+3.  Hallgató kiválasztja a kurzus felvétele menüpontot
+4.  Rendszer megjeleníti a hallgató által felvehető kurzusokat
+5.  Hallgató kiválasztja a kurzust
+6.  Rendszer hozzáadja a hallgatót a kurzus hallgatóinak listájához
+7.  Rendszer megjeleníti az "kurzus felvéve" üzenetet
+
+Elvárt eredmény:
+A hallgató sikeresen felvett egy újabb kurzust
+
+
+
+
+
+4. Nincs felvehető kurzus - ábra
+
+Rövid leírás:
+Hallgató már minden kurzust felvett
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot:
+-hallgató be van jelentkezve
+-rendszer online elérhető
+-adatbázisban szerepelnek kurzusok
+-Hallgató már felvett minden olyan kurzust melynek felvételére jogosult
+-"minden kurzus megjelenítése" opció nem aktív
+
+Lépések:
+1.  Hallgató kiválasztja a kurzusok menüt
+2.  Rendszer megjeleníti a kurzusok menüt
+3.  Hallgató kiválasztja a kurzus felvétele menüpontot
+4.  Rendszer üres listát jelenít meg
+
+Elvárt eredmény:
+üres lista

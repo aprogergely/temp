@@ -1,0 +1,97 @@
+1. Automatikus rendelés rendszerteszt - ábra
+
+Rövid leírás:
+automatikus rendelés beállítása
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+-online elérhető a szolgáltatás
+-felhasználó regisztrálva van
+-az anyagok adatbázisa nem üres
+-felhasználóhoz tartozik csoportvezető
+
+Lépések:
+1.  Felhasználó bejelentkezik
+2.  Rendszer megjeleníti a kezdőképernyőt
+3.  Felhasználó kiválasztja az "anyagok listája" menüpontot
+4.  Rendszer kilistázza az összes anyagot
+5.  Felhasználó kiválasztja az "automatikus rendelés" opciót
+6.  Rendszer megjeleníti az "automatikus rendelés"-hez tartozó bemeneti mezőket
+7.  Felhasználó kiválaszt egy anyag típust, a kívánt mennyiséget, illetve a rendelés periódusát
+8.  Felhasználó az "ok" gombra kattint
+9.  Rendszer értesíti a felhasználó csoportvezetőjét
+10. Csoportvezető engedélyezi a rendelést
+11. Rendszer rögzíti a rendelést az adatbázisba
+
+Elvárt eredmény:
+A rendelt anyag a megadott mennyiségben periodikusan kiszállításra kerül... valahova
+
+
+
+
+2. Visszautasított automatikus rendelés rendszerteszt - ábra
+
+Rövid leírás:
+automatikus rendelés beállítása, csoportvezető visszautasítja
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+-online elérhető a szolgáltatás
+-felhasználó regisztrálva van
+-az anyagok adatbázisa nem üres
+-felhasználóhoz tartozik csoportvezető
+
+Lépések:
+1.  Felhasználó bejelentkezik
+2.  Rendszer megjeleníti a kezdőképernyőt
+3.  Felhasználó kiválasztja az "anyagok listája" menüpontot
+4.  Rendszer kilistázza az összes anyagot
+5.  Felhasználó kiválasztja az "automatikus rendelés" opciót
+6.  Rendszer megjeleníti az "automatikus rendelés"-hez tartozó bemeneti mezőket
+7.  Felhasználó kiválaszt egy anyag típust, a kívánt mennyiséget, illetve a rendelés periódusát
+8.  Felhasználó az "ok" gombra kattint
+9.  Rendszer értesíti a felhasználó csoportvezetőjét
+	10. Csoportvezető visszautasítja a rendelést
+	11. Rendszer nem rögzíti a rendelést az adatbázisba
+
+Elvárt eredmény:
+A rendelés adatai nem kerülnek rögzítésre, a megadott anyag nem kerül kiszállításra
+
+
+
+
+
+3. Invalid rendelés - ábra
+
+Rövid leírás:
+automatikus rendelés beállítása
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+-online elérhető a szolgáltatás
+-felhasználó be van jelentkezve
+-felhasználó az "automatikus rendelés" opción van
+-felhasználóhoz tartozik csoportvezető
+
+Lépések:
+1.  Rendszer megjeleníti az "automatikus rendelés"-hez tartozó bemeneti mezőket
+2.  Felhasználó kiválaszt egy anyag típust, a kívánt mennyiséget, illetve a rendelés periódusát
+3.  Felhasználó az "ok" gombra kattint
+4.  Rendszer meghal
+
+Elvárt eredmény:
+???
+
+Tesztelendő adatok:
+-nemlétező típus megadása (admin most törölte)
+-negatív mennyiség
+-0 mennyiség
+-túl alacsony mennyiség (1 gram)
+-túl nagy mennyiség
+-túl gyakori periódus (1 perc)
+-túl ritka periódus (100 év)
+-típus/mennyiség/periódus adattípusa nem megfelelő
+-üresen hagyott mező

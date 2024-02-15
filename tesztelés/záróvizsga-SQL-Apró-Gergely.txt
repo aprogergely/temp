@@ -1,0 +1,38 @@
+1. Felhasználók lekérdezése az összes adattal:
+SELECT * FROM Customer_Details;
+
+2. Eilish adatainak lekérdezése:
+SELECT * FROM Customer_Details
+WHERE Name = "Eilish";
+
+3.Új felhasználó hozzáadása az adatbázishoz:
+INSERT INTO Customer_Details
+
+4. Azon felhasználó adatainak frissítése, akinek az ID-je 4. Módosítani kívánt mezőértékek Address = Berlin, age = 20
+UPDATE Customer_Details
+SET Address = Berlin, Age = 20
+WHERE ID = 4;
+
+5. Azon felhasználó törlése az adatbázisból, akinek az ID-je 1:
+DELETE FROM Customer_Details
+WHERE ID = 1;
+
+6. Legfiatalabb felhasználó lekérése:
+SELECT * FROM Customer_Details
+ORDER BY Age
+LIMIT 1;
+
+7. Felhasználók számlálása az adatbázisban:
+SELECT * FROM Customer_Details
+GROUP BY Customer_id
+
+8. 22 évesnél idősebb felhasználók lekérése:
+SELECT * FROM Customer_Details
+WHERE Age > 22;
+
+9. Felhasználók átlagos életkorának lekérése:
+SELECT AVG(Age) as average_age FROM Customer_Details;
+
+10. Felhasználók neveinek lekérése abc sorrendben:
+SELECT Name FROM Customer_Details
+ORDER BY Name;

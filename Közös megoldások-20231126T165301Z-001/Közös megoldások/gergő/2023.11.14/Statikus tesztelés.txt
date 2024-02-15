@@ -1,0 +1,21 @@
+-funkcionális követelmények, alpontok kétszeresen vannak listázva
+-funkcionális követelmények, hiányzik hogy a felhasználóknak van felhasználóneve és jelszava mint tulajdonság
+-funkcionális követelmények, hiányzik hogy mit csinál a csoportvezető és audit felhasználó
+-funkcionális követelmények, hiányzik admin felhasználó tud típust és csoportot beállítani
+-funkcionális követelmények, hiányzik adatok lekérdezése
+-funkcionális követelmények, hiányzik új anyag rendelése (nem automatikus)
+-funkcionális követelmények, hiányzik anyag törlése
+-funkcionális követelmények, hiányzik automatikus rendelés engedélyhez kötött
+-funkcionális követelmények, HIÁNYZIK MENÜ
+-funkcionális követelmények, hiányzik felhasználónév és jelszó specifikációja (bejelentkezés)
+
+-jogosultságok/jogusultsági körök ugyanaz a fogalom?
+-hogyan lesz valaki admin?
+-új csoportok létrehozása
+
+-felhasználási esetek #1, felhasználónév megadása
+-felhasználási esetek #3, fontos-e hogy admin vagyunk?
+-felhasználási esetek #5, kinek érkezik a visszaigazolás?
+-felhasználási esetek, sok helyen hiányzik mit csinál a rendszer az egyes lépések után
+
+-ábra, hiányzik rendelés periódusának megadása

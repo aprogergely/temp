@@ -1,0 +1,13 @@
+Ábra hiányos
+
+nemfunkcionális követelmények nem egyértelmű
+
+adatbázisban legyen record index
+
+rendszerkövetelmény hogy tudjon fizetni a felhasználó, és ezt mi lássuk a fizetést követő 1 percen belül
+
+felhasználási esetbe kell, hogy mikor rögzül a rendelés az adatbázisban
+
+mit jelent az ha egy rendelés nem normál és nem speciális, mikor fordulhat elő?
+
+mi lesz a már átutalt pénzzel ha a rendelés megszakad?

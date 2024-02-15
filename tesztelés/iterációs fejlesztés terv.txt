@@ -1,0 +1,17 @@
+1. 1-5s -> Időzítő megjelenik a képernyőn
+2. Van piros négyzet, rákattintok #1
+3. Változó színű négyzet, ha zöld #1
+4. integráció (szám az időtől függ)
+5. Eredmény tárolása
+6. eredmény megjelenítése
+7. Restart gomb
+
+Időzítő 1: Elszámol 1-től 5-ig, majd elindítja időzítő 2-t.
+
+Időzítő2: elindul, kattintásra leáll, időt eltárol
+
+Színes gomb on/off színtvált, időzítő2-t kezeli
+
+Label: kiírja az időt
+
+Eredménylista

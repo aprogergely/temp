@@ -1,0 +1,50 @@
+1. Rendelés leadása - funkcionális követelmény
+
+Rövid leírás:
+rendelés ellenőrzése adatbázisban
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online, html felületen vagyunk
+felület kitöltendő mezői üresek
+szolgáltatás online elérhető
+
+Lépések:
+1.  Felhasználó kitölti az üres mezőket
+2.  Felhasználó leadja a rendelést
+3.  Felhasználó egy percen belül fizet
+4.  Rendszer megállapítja, hogy a fizetés megtörtént
+5.  Rendelés bekerül az adatbázisba
+
+Elvárt eredmény:
+Leadott rendelés szerepel az adatbázisban
+Név, Szállítási cím, Fizetési mód, Számlázási cím, Mit kell szállítani, Méret mezők adatai egyeznek a rendelés sprán megadottakkal
+
+tesztelendő adatok:
+-üres mező
+-nem létező cím
+-külföldi cím
+-nem UTF-8 karakterek
+-ékezetes betű
+-hosszú név
+-egy karakterből álló név
+-negatív méret
+-nulla méret
+-túl nagy méret
+-méret betűvel/számmal írva
+
+
+
+
+
+2.A Fizetés tesztelése - funkcionális követelmény
+
+Rövid leírás:
+azonnali fizetés
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+frissen leadott rendelés <1mp
+

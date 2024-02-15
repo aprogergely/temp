@@ -1,0 +1,83 @@
+1. Készpénzes rendszerteszt
+
+Rövid leírás:
+készpénzzel fizetünk, lesz visszajáró
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+Gép működőképes
+van kellő összegű készpénzünk
+
+Lépések:
+1.  Jegyvásárlási folyamat indítása
+2.  Gép utazási információkat kér
+3.  Megadjuk
+4.  Gép fizetési információkat kér
+5.  Készpénzes fizetés választása, túlfizetés
+6.  Gép kiadja a jegyet
+7.  Elvesszük a jegyet
+8.  Gép kiadja a visszajárót
+9.  Elvesszük a visszajárót
+10. Gép megköszöni a vásárlást
+11. Gép visszaáll az eredeti állapotába
+
+Elvárt eredmény:
+kaptunk egy jegyet
+jegy azonos azzal amit kértünk
+visszajáró összege megfelelő
+gép visszaáll az eredeti állapotba
+
+
+
+
+
+2. Kártyás rendszerteszt
+
+Rövid leírás:
+kártyával fizetünk, nincs visszajáró
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+Gép működőképes
+van kellő mennyiségű pénz a kártyánkon
+
+Lépések:
+1.  Jegyvásárlási folyamat indítása
+2.  Gép utazási információkat kér
+3.  Megadjuk
+4.  Gép fizetési információkat kér
+5.  Kártyás fizetés választása
+6.  Gép kiadja a jegyet
+7.  Elvesszük a jegyet
+8.  Gép nem ad visszajárót
+9.  Elvesszük a kártyánkat
+10. Gép megköszöni a vásárlást
+11. Gép visszaáll az eredeti állapotába
+
+elvárt eredmény:
+kaptunk egy jegyet
+jegy azonos azzal amit kértünk
+gép visszaáll az eredeti állapotba
+
+
+
+
+
+
+
+3+ Egyéb lehetséges tesztek:
+-készpénzes fizetés pontos összeggel
+-készpénzes fizetés jelentős túlfizetéssel (legyen 1 millió fotint)
+-egyszerre több jegy vásárlása
+-folyamat megszakítása:
+	-nem adunk meg úticélt
+	-nem fizetünk
+	-otthagyjuk a jegyet
+	-nem vesszük el a visszajárót
+-hibás bemenet:
+	-rossz kártya
+	-bank nem elérhető
+	-kifogyott a jegy
+	-kifogyott a pénz a gépből

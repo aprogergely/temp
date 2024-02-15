@@ -1,0 +1,92 @@
+1. Normál rendelés rendszerteszt - ábra
+
+Rövid leírás:
+normál rendelés leadása
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+
+Lépések:
+1.  Vásárló lead egy normál rendelést
+2.  Rendszer megerősíti, hogy a fizetés megtörtént
+3.  Rendszer megállapítja, hogy ez normál rendelés
+4.  Rendszer megerősíti a rendelést
+5.  Rendelés kiszállításra kerül
+
+Elvárt eredmény:
+Rendelés kiszállításra kerül
+
+
+
+
+2. Speciális rendelés rendszerteszt - ábra
+
+Rövid leírás:
+Speciális rendelés leadása
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+
+Lépések:
+1.  Vásárló lead egy Speciális rendelést
+2.  Rendszer megerősíti, hogy a fizetés megtörtént
+3.  Rendszer megállapítja, hogy ez nem normál rendelés
+4.  Rendszer megállapítja, hogy ez speciális rendelés
+5.  Rendszer speciális rendelésként jelöli meg a rendelést az adatbázisban
+6.  Rendszer megerősíti a rendelést
+7.  Rendelés kiszállításra kerül
+
+Elvárt eredmény:
+Rendelés kiszállításra kerül
+adatbázisban a rendelés speciálisként jelenik meg
+
+
+
+
+
+3. Egyéb rendelés rendszerteszt - ábra
+
+Rövid leírás:
+nemnormál nemspeciális rendelés leadása
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+
+Lépések:
+1.  Vásárló lead egy rendelést
+2.  Rendszer megerősíti, hogy a fizetés megtörtént
+3.  Rendszer megállapítja, hogy ez nem normál rendelés
+4.  Rendszer megállapítja, hogy ez nem speciális rendelés
+5.  Rendelés megszakítása
+
+Elvárt eredmény:
+Rendelés nem kerül kiszállításra
+
+
+
+
+4. Vegyes rendelés rendszerteszt - ábra
+
+Rövid leírás:
+olyan rendelés leadása ami egyszerre normál és speciális
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+
+Lépések:
+1.  Vásárló lead egy normál rendelést
+2.  Rendszer megerősíti, hogy a fizetés megtörtént
+3.  Rendszer megállapítja, hogy ez normál rendelés
+4.  Rendszer megerősíti a rendelést
+5.  Rendelés kiszállításra kerül
+
+Elvárt eredmény:
+Rendelés kiszállításra kerül normál rendelésként

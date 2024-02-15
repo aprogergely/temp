@@ -1,0 +1,13 @@
+funkcionális követelmény - Regisztráció : regisztrált adatok ellenőrzése/mentése hiányzik
+
+nemfunkcionális követelmény - jelszó : Utólag meg KELL-e változtatni, vagy csak lehetőség van rá?
+
+nemfunkcionális követelmény - felhasználónév : biztonságosan kell tárolni
+
+Rendszerkövetelmények - browserek : fireFox
+
+email-cím és felhasználónév változatos használata, döntsük el melyikkel akarunk dolgozni
+
+"bejelentkezés gomb" és "regisztráció gomb" kifejezések nem egyértelmű használata (egyszer a főmenüben, egyszer a bejelentkező/regisztrációs felületen)
+
+hiányzik: hogyan lesz valaki admin?

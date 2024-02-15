@@ -1,0 +1,17 @@
+- összegzés; feladatok feladatok
+
+- funkcionális követelmények; fiókok; "mindkét felhasználó"; Nem csak két felhasználónk lesz
+- funkcionális követelmények; fiókok; oktató tud kurzust kiírni, valamint rögzíteni. Mi a különbség?
+- funkcionális követelmények; menüről nincs semmi
+
+- nemfunkncionális követelmények; párhuzamos felhasználók; párhuzamosan bejelentkezett hallgatókra nincs követelmény, oktatókra első követelmény redundáns
+- nemfunkncionális követelmények; bővíthetőség; a korábban felírt számok a normál vagy a már bővített rendszerre vonatkoznak?
+- nemfunkncionális követelmények; biztonsági mentés; mekkora a kis méret? kivitelezhető-e nagy mennyiségű hallgatóra? mely adatokról készül mentés?
+- nemfunkncionális követelmények; elérhetőségi idő; nem rajtunk múlik, rossz internetkapcsolat mellett túl fogjuk lépni
+
+- rendszerkövetelmények; rendszerbeágyazottság; admin felhasználóról korábban nem volt szó. "Diák"-ról sem, habár ez feltehetően "hallgató" lesz.
+- rendszerkövetelmények; redundancia; Mit jelent a "korlátoztt mértékben"?
+
+- felhasználási esetek; kurzus meghirdetése #4;  A "kurzus meghirdetése" menüpontnak már a rákattintása előtt meg kellett jelennie
+- felhasználási esetek; feladat hozzáadása #9;  A kurzushoz talán inkább új feladatot adjunk hozzá, ne a kurzust
+- felhasználási esetek; kurzus felvétele #4; nem egyértelmű, hogy a másik esetben mi van

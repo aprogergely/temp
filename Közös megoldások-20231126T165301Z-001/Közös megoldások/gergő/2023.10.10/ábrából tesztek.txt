@@ -1,0 +1,109 @@
+1. User felhasználó rendszerteszt - ábra
+
+Rövid leírás:
+már regisztrált felhasználó bejelentkeztetése
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+felhasználó regisztrálva van
+felhasználó emlékszik a belépési adataira
+
+Lépések:
+1.  Felhasználó rákattint a bejelentkezés gombra a főoldalon.
+2.  Rendszer megjeleníti a bejelentkező oldalt.
+3.  Felhasználó megadja a felhasználónevét és jelszavát.
+4.  Felhasználó a bejelentkezés gombra kattint
+5.  A rendszer belépteti a felhasználót a user home page-re. 
+
+
+Elvárt eredmény:
+Felhasználó bejelentkezett a user home page-re
+
+
+
+
+2. Admin felhasználó rendszerteszt - ábra
+
+Rövid leírás:
+már regisztrált, admin felhasználó bejelentkeztetése
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+felhasználó adminként regisztrálva van
+felhasználó emlékszik a belépési adataira
+
+Lépések:
+1.  Felhasználó rákattint a bejelentkezés gombra a főoldalon.
+2.  Rendszer megjeleníti a bejelentkező oldalt.
+3.  Felhasználó megadja a felhasználónevét és jelszavát.
+4.  Felhasználó a bejelentkezés gombra kattint
+5.  A rendszer belépteti a felhasználót az admin home page-re. 
+
+
+Elvárt eredmény:
+Felhasználó bejelentkezett az admin home page-re
+
+
+
+
+
+3. Regisztració rendszerteszt - ábra
+
+Rövid leírás:
+regisztráció után bejelentkezés
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+
+Lépések:
+1.  Felhasználó rákattint a regisztrávió gombra a főoldalon.
+2.  Rendszer megjeleníti a regisztráció oldalt.
+3.  Felhasználó megadja a felhasználónevét és jelszavát.
+4.  Felhasználó a regisztráció gombra kattint
+5.  Rendszer megjeleníti a bejelentkező oldalt.
+6.  Felhasználó megadja a felhasználónevét és jelszavát.
+7.  Felhasználó a bejelentkezés gombra kattint
+8.  A rendszer belépteti a felhasználót a user home page-re.
+
+Elvárt eredmény:
+Felhasználó bejelentkezett a user home page-re
+
+Tesztelendő adatok:
+korábban regisztrált e-mail cím
+üres mező
+
+
+
+
+
+4. User felhasználó rendszerteszt hibás jelszó - ábra
+
+Rövid leírás:
+már regisztrált felhasználó bejelentkeztetése másodszori próbálkozásra
+
+Teszt író: Apró Gergely
+
+Kiindulási állapot: 
+online elérhető a szolgáltatás
+felhasználó regisztrálva van
+felhasználó emlékszik a belépési adataira
+
+Lépések:
+1.  Felhasználó rákattint a bejelentkezés gombra a főoldalon.
+2.  Rendszer megjeleníti a bejelentkező oldalt.
+3.  Felhasználó megadja a felhasználónevét és jelszavát.
+4.  A megadott adatok hibásak.
+5.  Felhasználó kattint (?)
+6.  Rendszer megjeleníti a bejelentkező oldalt.
+7.  Felhasználó megadja a felhasználónevét és jelszavát.
+8.  A rendszer belépteti a felhasználót a user home page-re. 
+
+
+Elvárt eredmény:
+Felhasználó bejelentkezett a user home page-re
